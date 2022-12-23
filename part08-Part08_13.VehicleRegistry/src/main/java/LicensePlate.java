@@ -19,10 +19,13 @@ public class LicensePlate {
         return country + " " + liNumber;
     }
     
+    // Makes suret that each object has a unique key.
     public int hashCode(){
         return Objects.hash(country, liNumber);
     }
     
+    /* Makes sure that we can find if two objects are equals based on their variables despite
+    having difference hashCodes. */
     public boolean equals(Object comparedObject){
         // If the variable are the same.
         if(this == comparedObject){
