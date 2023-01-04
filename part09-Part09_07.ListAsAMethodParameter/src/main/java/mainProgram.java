@@ -9,5 +9,5 @@ public class mainProgram {
 
     // Implement here a method returnSize
     // which returns the size of the list given to it
-    //as a parameter
+    //as a parameter.
 }
