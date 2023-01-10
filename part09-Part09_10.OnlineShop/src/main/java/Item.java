@@ -14,18 +14,20 @@ public class Item {
     private int qty;
     private int unitPrice;
     
-    public Item(String product, int qty, int unitPride){
+    public Item(String product, int qty, int unitPrice){
         this.product = product;
         this.qty = qty;
         this.unitPrice = unitPrice;
     }
     
-    public int Price(){
-        return this.unitPrice * this.qty;
+    public int price() {
+
+        return this.unitPrice * qty;
+
     }
     
     public void increaseQuantity(){
-        this.qty ++;
+        this.qty++;
     }
     
     @Override
